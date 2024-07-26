@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="document.body.style.opacity='1'">
+    <div class="video-container">
+        <div class="hero">
+            <div class="nav">
+                <div class="logo">
+                    <h2>Santhosh</h2>
+                </div>
+                <div class="link">
+                    <ul>
+                        <li><a href="#about" class="active">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-detil">
+                    <p>Hello I'm</p>
+                    <h1>Santhosh</h1>
+                    <h4>Software Developer</h4>
+                    <div class="btn">
+                        <a href="./Santhosh_SoftwareEngineer_Resume.pdf" target="blank"><button type="submit">Download CV</button></a>
+                        <button type="submit" class="btn-2">Hire Me</button>
+                    </div>
+                    <video autoplay muted loop id="background-video">
+                        <source src="Abstract.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/santhosh-techie01" target="blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/santhosh-techie01/" target="blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Me -->
+    <section class="about-section" id="about">
+        <h1 class="header-h1">About me</h1>
+        <div class="about">
+            <div class="profile-picture">
+                <img src="https://img.freepik.com/premium-photo/young-smiling-man-working-laptop-computer-content-filling-content-management-social-media-concept-3d-vector-people-character-illustration-cartoon-minimal-style_979495-139476.jpg?size=626&ext=jpg&ga=GA1.1.1363748645.1716402531&semt=ais_user" alt="Picture">
+            </div>
+            <div class="about-content">
+                <h2>Santhosh</h2>
+                <p> I am an Engineering Student studying Electronics and communication at <b>Sri Krishna College of Technology,Coimbatore</b> </p>
+                <p>A software developer who interests in the creating dynamic and responsive software and websites...I like analysing the realworld Problems and find out opportunities to solve the problems
+                    to make Products in a scalable way.I am Polygot, Orator, Sports enthusiast.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <header>
+            <h1>Skills</h1>
+        </header>
+        <div class="container">
+            <div class="skills">
+                <div class="skill">
+                    <h2 id="skill-header">HTML</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">CSS</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">Bootstrap</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">React</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">Material UI</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">Canva</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">Java</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">Python</h2>
+                </div>
+                <div class="skill">
+                    <h2 id="skill-header">c++</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects section -->
+    <section id="projects">
+        <h2 id="Project-header">Projects</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3 class="Project-container-header">OrgProducts</h3>
+                <img src="./OrgProducts_homePage.png" alt="OrgPage">
+                <p>OrgProducts ia a ecommerce website to sell and buy the Organic Products at different locations.It is built by using the HTML and CSS</p>
+            </div>
+            <div class="grid-item">
+                <h3 class="Project-container-header">Quiz WebPage</h3>
+                <img src="./QuiZPro_HomePage.png" alt="QuizPage">
+                <p>QUIZPro is an Quiz application that has interactive interface that built by using the React.</p>
+            </div>
+            <div class="grid-item">
+                <h3 class="Project-container-header">Travel WebPage</h3>
+                <img src="./TravelPage.png" alt="TravelPage">
+                <p>SKy's Limit is an website for travellers and globetrotter with many features that built by using HTML and CSS</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="contact-header">Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="text" id="number" name="number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

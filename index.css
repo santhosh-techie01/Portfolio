@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+    flex-wrap: wrap;
+}
+
+.nav .link ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav .link ul a {
+    text-decoration: none;
+    color: #030202;
+    font-weight: 600;
+    transition: all 200ms ease-in-out;
+}
+
+ul a .active {
+    color: #090000;
+}
+
+.nav .link ul a:hover {
+    color: #10eb6f;
+}
+
+.logo {
+    color: #000000;
+}
+
+.main {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.main .main-detil {
+    color: #0d0909;
+}
+
+.main .main-detil h1 {
+    font-size: 50px;
+}
+
+.main .main-detil h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main .btn button {
+    padding: 8px 20px;
+    background: transparent;
+    border-radius: 70px;
+    border: 1px solid #000000;
+    color: #cb6652;
+    margin-right: 1rem;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.main .btn .btn-2 {
+    padding: 8px 30px;
+    background: #191414;
+    color: #ede7e7;
+    border: none;
+    outline: none;
+    transition: all 200ms ease-in-out;
+}
+
+.main .btn .btn-2:hover {
+    background: #6548a8;
+    transform: scale(1.1);
+}
+
+/* Social Icons */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social i {
+    color: #f4f4f8;
+    font-size: 40px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #cd1919;
+}
+
+/* Video Background */
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* About Me Section */
+.about-section {
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+    background-color: #faf9f9;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+.about-section h1{
+    margin-top: 50px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Align items horizontally */
+    flex-wrap: wrap;
+    height: 100%; /* Ensure flex container takes full height */
+}
+
+.profile-picture {
+    margin-right: 40px; 
+}
+
+.profile-picture img {
+    border-radius: 10%; /* Slight rounding for rectangle shape */
+    width: 300px;
+    height: 400px; 
+    object-fit: contain;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for better readability */
+}
+
+.header-h1 {
+    font-family: 'Poppins', sans-serif; /* Font family for the header */
+    font-size: 2.0em; /* Adjust font size */
+    text-align: center; /* Center the text */
+    margin-right: 40px;
+    margin-bottom: 40px; /* Margin below the header */
+    color: #000000; /* Color of the header text */
+}
+
+.about-content h2 {
+    font-size: 2em; /* Adjust font size */
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.about-content p {
+    font-family: 'Verdana', sans-serif; /* Change font family for the paragraph */
+    font-size: 1em; /* Adjust font size */
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+#about-header {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Skills Section */
+.container {
+    font-family:'Courier New', Courier, monospace;
+    gap: 2rem;
+    background-color: #D6EFD8;
+    padding: 20px;
+    min-height: auto;
+    max-height: 100vh;
+}
+
+.skills-section header {
+    background-color: #41B06E;
+    color: #090202;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.skills-section .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-size: 20px;
+    flex-wrap:wrap;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: #3EC70B;
+    border: 1px solid #7bf303;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+#skill-header{
+    font-weight: 500;
+    font-size:large;
+    color: #74E291;
+}
+
+.skill h2 {
+    margin-top: 0;
+}
+/* Projects Section */
+#projects {
+    padding: 20px; /* Reduced padding */
+    background-color: #90e0ef;
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#Project-header{
+    color:#201658;
+}
+.Project-container-header{
+    color:#201658;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    background-color:#f5f3f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(243, 231, 4, 0.1);
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.grid-item h3 text{
+    margin-top: 0;
+    background-color: #1D24CA;
+}
+
+.grid-item img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 300px; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Add border radius to match the container */
+}
+
+.grid-item p {
+    color: #5356FF;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+    box-shadow:5px 8px 16px #03346E; /* Increase shadow on hover */
+}
+
+/* Contact Section */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: #d8f3dc;
+    padding: 40px;
+    box-shadow: 0 0 10px #b7e4c7;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #95d5b2;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-header {
+    font-size: 36px;
+    font-weight: bold;
+    color:#95d5b2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contact form label {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#contact form input,
+#contact form textarea {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #74c69d;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact form textarea {
+    resize: vertical;
+}
+
+#contact form button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #52b788;
+    color: #000a06;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+
+#contact form button:hover {
+    background-color: #2d6a4f;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 20px;
+    }
+
+    .profile-picture {
+        margin-right: 0; /* Remove right margin on small screens */
+        margin-bottom: 20px; /* Add margin below the profile picture */
+    }
+
+    .profile-picture img {
+        width: 200px; /* Adjust width for smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .about-content {
+        padding: 0;
+        text-align: center; /* Center text on small screens */
+    }
+}
